@@ -1,0 +1,31 @@
+{
+  "name": "@pangeacyber/langchain-js-user-authn",
+  "version": "0.0.0",
+  "private": true,
+  "type": "module",
+  "license": "MIT0",
+  "scripts": {
+    "demo": "tsx index.ts",
+    "format": "biome format",
+    "lint": "biome lint",
+    "typecheck": "tsc --noEmit"
+  },
+  "dependencies": {
+    "@dotenvx/dotenvx": "1.28.0",
+    "@langchain/core": "0.3.19",
+    "@langchain/openai": "0.3.14",
+    "citty": "0.1.6",
+    "consola": "3.2.3",
+    "fastify": "5.1.0",
+    "langchain": "0.3.6",
+    "open": "10.1.0",
+    "pangea-node-sdk": "4.1.0"
+  },
+  "devDependencies": {
+    "@biomejs/biome": "1.9.4",
+    "@tsconfig/node22": "22.0.0",
+    "tsx": "4.19.2",
+    "typescript": "5.7.2",
+    "ultracite": "4.1.8"
+  }
+}
