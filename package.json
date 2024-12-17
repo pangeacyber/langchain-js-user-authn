@@ -16,7 +16,7 @@
     "@langchain/openai": "0.3.14",
     "citty": "0.1.6",
     "consola": "3.2.3",
-    "fastify": "5.1.0",
+    "fastify": "5.2.0",
     "langchain": "0.3.7",
     "open": "10.1.0",
     "pangea-node-sdk": "4.1.0"
