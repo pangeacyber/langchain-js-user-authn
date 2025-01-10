@@ -17,7 +17,7 @@
     "citty": "0.1.6",
     "consola": "3.3.3",
     "fastify": "5.2.1",
-    "langchain": "0.3.9",
+    "langchain": "0.3.10",
     "open": "10.1.0",
     "pangea-node-sdk": "4.2.0"
   },
