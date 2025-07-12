@@ -27,6 +27,6 @@
     "@types/node": "22.16.2",
     "tsx": "4.20.3",
     "typescript": "5.8.3",
-    "ultracite": "4.2.13"
+    "ultracite": "5.0.32"
   }
 }
