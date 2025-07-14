@@ -6,6 +6,9 @@
       "correctness": {
         "noNodejsModules": "off"
       },
+      "nursery": {
+        "noShadow": "off"
+      },
       "style": {
         "noNonNullAssertion": "off",
         "useNamingConvention": "off"
