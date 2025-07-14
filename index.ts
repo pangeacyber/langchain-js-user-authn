@@ -11,13 +11,12 @@ import {
 import { ChatOpenAI, OpenAIEmbeddings } from '@langchain/openai';
 import { defineCommand, runMain } from 'citty';
 import { consola } from 'consola';
+import fastify from 'fastify';
 import { createStuffDocumentsChain } from 'langchain/chains/combine_documents';
 import { DirectoryLoader } from 'langchain/document_loaders/fs/directory';
 import { TextLoader } from 'langchain/document_loaders/fs/text';
 import { RecursiveCharacterTextSplitter } from 'langchain/text_splitter';
 import { MemoryVectorStore } from 'langchain/vectorstores/memory';
-
-import fastify from 'fastify';
 import open from 'open';
 import { AuthNService, PangeaConfig } from 'pangea-node-sdk';
 import { AuthzRetriever } from './retrievers/authz.js';
@@ -91,9 +90,7 @@ const main = defineCommand({
 
         const response = await authn.client.userinfo(authCode);
         if (
-          !response.success ||
-          !response.result ||
-          !response.result.active_token
+          !(response.success && response.result && response.result.active_token)
         ) {
           reply.code(401);
           return;
