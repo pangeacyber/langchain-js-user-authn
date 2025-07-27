@@ -18,7 +18,7 @@
     "consola": "3.4.2",
     "fastify": "5.4.0",
     "langchain": "0.3.30",
-    "open": "10.1.2",
+    "open": "10.2.0",
     "pangea-node-sdk": "5.2.0"
   },
   "devDependencies": {
