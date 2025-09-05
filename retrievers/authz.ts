@@ -16,8 +16,8 @@ type AuthzRetrieverInput = {
 export class AuthzRetriever<
   V extends VectorStoreInterface = VectorStoreInterface,
 > extends VectorStoreRetriever<V> {
-  private username: string;
-  private client;
+  private readonly username: string;
+  private readonly client;
 
   constructor(fields: VectorStoreRetrieverInput<V> & AuthzRetrieverInput) {
     super(fields);
